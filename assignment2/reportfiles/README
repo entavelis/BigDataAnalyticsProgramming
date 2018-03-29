@@ -1,0 +1,1 @@
+java -XX:+UseCompressedOops Runner -threshold 0.9 -method lsh -maxFiles 7416113 -inputPath /cw/bdap/assignment2/tweets -outputPath output -shingleLength 3 -nShingles 32767 -nRows 20 -nBuckets 1000000 -nBands 4

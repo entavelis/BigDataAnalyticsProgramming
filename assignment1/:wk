@@ -1,0 +1,86 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here" % --------------------------------------------------------------
+ 
+\documentclass[12pt]{article}
+
+\usepackage{listings}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{graphicx}
+\graphicspath{ {../media/} } 
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand\indep{\protect\mathpalette{\protect\independenT}{\perp}}
+\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{reflection}[2][Reflection]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{proposition}[2][Proposition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+ 
+\begin{document}
+ 
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+ 
+\title{Assignment 1\\
+Big Data Analytics Programming} %if necessary, replace with your course title
+\author{Evangelos Ntavelis\\ %replace with your name
+r0692337 \\
+evangelos.ntavelis@student.kuleuven.be}
+ 
+\maketitle
+
+\tableofcontents
+
+\section{Blocked Matrix Multiplication}
+
+The goal of the first part of the assignment is to test if we can achieve better performance by multiplying two matrices in a blocked fashion rather than following the naive approach. 
+
+Firstly, the implementation of blocked matrix multiplication was something trivial given we had the code of naive method. We had just to make sure that our changes didn't cause any segmentation faults by going over the matrices' limits and how to correctly allocate enormous chunks of memory. We also made sure that the blocked method produced the same results as the naive method.
+
+The more challenging part was to gauge the performance of the algorithm based on different block sizes and inputs. One question that we should answer if different block sizes perform better depending on how big the input matrices are. Thus, we created different random input matrices whose size was growing exponentially to the factor of 2. For these inputs we tested exponentially growing block-sizes. As the time needed for the program to run grew according to the size of the inputs, we initially planned to present the results in a logarithmic scale graph, but that decreased the readability of the graph.
+
+\lstinputlisting[language=Python]{./MatrixMultiplication/matrixgen.py}
+
+As we can see in \ref{Figure 1}, the naive method is readily outperformed after increasing the size just a bit. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=1]{./MatrixMultiplication/graph}
+    \caption{Running time in seconds - Size of the Matrix}
+    \label{Figure 1}
+\end{figure}
+
+\section{Spam Filter}
+tset stest aste 
+\subsection{Introduction}
+
+
+\subsection{Evaluation Metrics}
+
+
+\subsection{Experiments}
+
+\subsection{Conclusions}
+
+\subsection{Further Improvements}
+
+
+
+\end{document}
+
+

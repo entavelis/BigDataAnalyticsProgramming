@@ -1,0 +1,13 @@
+\BOOKMARK [1][-]{section.1}{Blocked Matrix Multiplication}{}% 1
+\BOOKMARK [1][-]{section.2}{Spam Filter}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Implementing the algorithms}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Evaluation Metrics}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Experiments}{section.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Setting up the experiments}{subsection.2.3}% 6
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Naive Bayes Feature Hashing}{subsection.2.3}% 7
+\BOOKMARK [3][-]{subsubsection.2.3.3}{Naive Bayes Count-Min-Sketch}{subsection.2.3}% 8
+\BOOKMARK [3][-]{subsubsection.2.3.4}{Perceptron Feature Hashing}{subsection.2.3}% 9
+\BOOKMARK [3][-]{subsubsection.2.3.5}{Perceptron Count-Median-Sketch}{subsection.2.3}% 10
+\BOOKMARK [3][-]{subsubsection.2.3.6}{General Remarks}{subsection.2.3}% 11
+\BOOKMARK [1][-]{section.3}{Personal Remarks}{}% 12
+\BOOKMARK [1][-]{section.4}{Resources}{}% 13

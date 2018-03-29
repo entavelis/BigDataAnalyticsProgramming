@@ -1,0 +1,13 @@
+\contentsline {section}{\numberline {1}Blocked Matrix Multiplication}{1}{section.1}
+\contentsline {section}{\numberline {2}Spam Filter}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Implementing the algorithms}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Evaluation Metrics}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Experiments}{4}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Setting up the experiments}{4}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Naive Bayes Feature Hashing}{4}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Naive Bayes Count-Min-Sketch}{6}{subsubsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.4}Perceptron Feature Hashing}{6}{subsubsection.2.3.4}
+\contentsline {subsubsection}{\numberline {2.3.5}Perceptron Count-Median-Sketch}{7}{subsubsection.2.3.5}
+\contentsline {subsubsection}{\numberline {2.3.6}General Remarks}{7}{subsubsection.2.3.6}
+\contentsline {section}{\numberline {3}Personal Remarks}{9}{section.3}
+\contentsline {section}{\numberline {4}Resources}{9}{section.4}

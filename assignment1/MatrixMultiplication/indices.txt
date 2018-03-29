@@ -1,0 +1,8 @@
+8 m8by8A.csv m8by8B.csv
+16 m16by16A.csv m16by16B.csv
+32 m32by32A.csv m32by32B.csv
+64 m64by64A.csv m64by64B.csv
+128 m128by128A.csv m128by128B.csv
+256 m256by256A.csv m256by256B.csv
+512 m512by512A.csv m512by512B.csv
+1024 m1024by1024A.csv m1024by1024B.csv

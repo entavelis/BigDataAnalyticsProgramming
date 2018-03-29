@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/code/NaiveBayesFeatureHashing.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<mapAttribute key="org.eclipse.debug.core.environmentVariables">
+<mapEntry key="LEARNING_RATE" value="0.0001"/>
+<mapEntry key="LOG_NB_BUCKETS" value="20"/>
+<mapEntry key="MAX_N" value="2"/>
+<mapEntry key="NB_HASHES" value="10"/>
+<mapEntry key="THRESHOLD" value="0.5"/>
+</mapAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="NaiveBayesFeatureHashing"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="../dataSubset/index_small ../stop-word-list_stanford.txt 20 0.5 small 100 2 -writeOutAllPredictions"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="code"/>
+</launchConfiguration>
