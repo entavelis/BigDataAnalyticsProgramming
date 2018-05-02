@@ -1,0 +1,6 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Index Structures}{}% 2
+\BOOKMARK [1][-]{section.3}{Movie Recommendations}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Fitting the dataset into 2 Gigabytes of RAM}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Code Performance Choices}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Parameter Tuning and Evaluation}{section.3}% 6

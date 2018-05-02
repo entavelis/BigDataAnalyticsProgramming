@@ -1,0 +1,11 @@
+#It was run consistently on namen
+java -cp .:bin/ -Xms2g -Xmx2g PearsonCorrelation -trainingFile data/ra.train -outputFile data/ra.matrix -threshold 0.4 -leastCommon 5 -adjThreshold 15
+
+#The following command is the fast Movie Runner reading from the disk
+#java -cp .:bin/ -Xms2g -Xmx2g MovieRunner -trainingFile data/ra.train -matrixFile data/ra.matrix -testFile data/ra.test
+
+# There seems to be a difference in RMSE when run with onlinePearson
+# The correct RMSE output can be evaluated as such:
+java -cp .:bin/ -Xms2g -Xmx2g MovieRunner -trainingFile data/ra.train -testFile data/ra.test -onlinePearson -threshold 0.4 -adjThreshold 15 -leastCommon 5
+
+

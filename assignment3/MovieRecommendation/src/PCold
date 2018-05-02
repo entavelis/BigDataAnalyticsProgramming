@@ -1,0 +1,487 @@
+import java.util.*;
+import java.io.*;
+import java.nio.charset.*;
+
+/**
+ * Computes a matrix with Pearson's product-moment correlation coefficients
+ * for the ratings given to movies by pairs users.
+ *
+ * @author Pieter Robberechts
+ *
+ */
+public class PearsonsCorrelation {
+//    short [][] corrMatrix;
+    private int threshold;
+    private int adjThreshold;
+    private int noNaNs;
+    private int noUsers;
+
+    private Map<Integer, Short>[] correlations;
+    private ArrayList<UserCorrelation>[] corrList;
+
+    private double userAverages[];
+
+    /**
+     * Create an empty PearsonsCorrelation instance with default parameters.
+     */
+    public PearsonsCorrelation() {
+        super();
+        // FILL IN HERE //
+    }
+
+    /**
+     * Create a PearsonsCorrelation instance with default parameters.
+     */
+    public PearsonsCorrelation(MovieHandler ratings) {
+        super();
+        // FILL IN HERE //
+        noNaNs = 0;
+        threshold = 4;
+        adjThreshold = 10;
+        noUsers = ratings.getNumUsers();
+//        noUsers = 10000;
+
+        // Precomputes and stores the Average Rating per User
+        userAverages = new double[noUsers];
+        for (int i = 0 ; i< noUsers; i++){
+            userAverages[i] = computeUserRatingAverage(ratings.getUsersToRatings().get(ratings.getUserIDs().get(i)));
+        }
+
+//        corrList = new ArrayList[noUsers-1];
+
+        // Pearson Correlation is symmetrical thus we only compute half of the "matrix"
+        // The last row remains empty and thus we only need noUsers - 1 and not noUsers
+        correlations = new HashMap[noUsers - 1];
+
+        long start = System.currentTimeMillis();
+        for (int i = 0; i < noUsers - 1; i++) {
+//            corrList[i] = new ArrayList<UserCorrelation>();
+            correlations[i] = new HashMap<Integer, Short>();
+            for (int j = i + 1; j < noUsers; j++) {
+                double corr = correlation(ratings.getUsersToRatings().get(ratings.getUserIDs().get(i)),
+                        ratings.getUsersToRatings().get(ratings.getUserIDs().get(j)),
+                        userAverages[i], userAverages[j]);
+                if (!Double.isNaN(corr)) {
+                    // ATTENTION: fix rounding!
+//                    corrList[i].add(new UserCorrelation(j,((short) (10000*corr))));                }
+                    correlations[i].put(j, (short) (10000 * corr));
+//                    System.out.println(correlations[i].get(j));
+                }
+            }
+            if ((i % 1000) == 0) {
+                System.out.println(i);
+                System.out.println((System.currentTimeMillis() - start)/1000.0);
+                start = System.currentTimeMillis();
+            }
+        }
+//        System.out.println(correlations.size());
+//        System.out.println(noNaNs);
+
+    }
+
+
+
+    /**
+     * Load a previously computed PearsonsCorrelation instance.
+     */
+    public PearsonsCorrelation(MovieHandler ratings, String filename) {
+        // FILL IN HERE //
+        readCorrelationMatrix(filename);
+    }
+
+
+    /**
+     * Returns the correlation between two users.
+     *
+     * @param i True user id
+     * @param j True user id
+     * @return The Pearson correlation
+     */
+    private double get(int i, int j) {
+        double correlation = 0;
+        // FILL IN HERE //
+        if (i>j){
+            if (correlations[j].containsKey(i)) {
+                correlation = correlations[j].get(i)/10000.0;
+            }
+            else {
+                correlation = Double.NaN;
+            }
+
+//            correlation = corrMatrix[i-1][j]/10000.0;
+//            correlation = correlations.contains()
+        }
+        else if (i==j){
+            correlation = 1.0;
+        }
+        else {
+            if (correlations[i].containsKey(j)) {
+                correlation = correlations[i].get(j)/10000.0;
+            }
+            else {
+                correlation = Double.NaN;
+            }
+//            correlation = corrMatrix[j - 1][i]/10000.0;
+        }
+        return correlation;
+    }
+
+
+
+    /**
+     * Computes the Pearson's product-moment correlation coefficient between
+     * the ratings of two users.
+     *
+     * Returns {@code NaN} if the correlation coefficient is not defined.
+     *
+     * @param xArray first data array
+     * @param yArray second data array
+     * @param xMean precomputed mean of first array
+     * @param yMean precomputed mean of second array
+     * @return Returns Pearson's correlation coefficient for the two arrays
+     */
+    public double correlation(List<MovieRating> xRatings, List<MovieRating> yRatings, double xMean, double yMean) {
+        double correlation = 0;
+        // FILL IN HERE //
+
+        // ATTENTION: copy the original Ratings
+//        List<MovieRating> xLeft = xRatings;
+//        List<MovieRating> yLeft = yRatings;
+        List<MovieRating> xLeft = new ArrayList<MovieRating>();
+        List<MovieRating> yLeft = new ArrayList<MovieRating>();
+
+        // Keep the ones we need if not enough return NaN
+
+        Iterator<MovieRating> xIter = xRatings.iterator();
+        Iterator<MovieRating> yIter = yRatings.iterator();
+
+
+        // We don't have to check as we already know we have at least 20 movies for each user
+
+        // To bypass the problem for y not initialised for equality check
+        MovieRating y = new MovieRating(-1, 0) ;
+        MovieRating x;
+
+        // break the loop
+        while (xIter.hasNext()){
+            x = xIter.next();
+
+            while (yIter.hasNext()){
+                y = yIter.next();
+                if (y.getMovieID() >= x.getMovieID()){
+                    break;
+                }
+            }
+
+            if (x.getMovieID() == y.getMovieID()) {
+                xLeft.add(x);
+                yLeft.add(y);
+
+            }
+        }
+
+        if (xLeft.size() < threshold) {
+//            noNaNs++;
+            return Double.NaN;
+        }
+
+//        yLeft.retainAll(xLeft);
+
+        correlation = computeCorrelation(xLeft, yLeft, xMean, yMean);
+
+        // Adjust correlation based on adj threshold
+        if (xLeft.size() < adjThreshold){
+            correlation = correlation * xLeft.size()/adjThreshold;
+        }
+        return correlation;
+    }
+
+    /**
+     * Computes the Pearson's product-moment correlation coefficient between
+     * the ratings of two users.
+     *
+     * Returns {@code NaN} if the correlation coefficient is not defined.
+     *
+     * @param xArray first data array
+     * @param yArray second data array
+     * @return Returns Pearson's correlation coefficient for the two arrays
+     */
+    public double correlation(List<MovieRating> xRatings, List<MovieRating> yRatings) {
+        double correlation = 0;
+        // FILL IN HERE //
+
+        // ATTENTION: copy the original Ratings
+//        List<MovieRating> xLeft = xRatings;
+//        List<MovieRating> yLeft = yRatings;
+        List<MovieRating> xLeft = new ArrayList<MovieRating>();
+        List<MovieRating> yLeft = new ArrayList<MovieRating>();
+
+        // Keep the ones we need if not enough return NaN
+
+        Iterator<MovieRating> xIter = xRatings.iterator();
+        Iterator<MovieRating> yIter = yRatings.iterator();
+
+
+        // We don't have to check as we already know we have at least 20 movies for each user
+
+        // To bypass the problem for y not initialised for equality check
+        MovieRating y = new MovieRating(-1, 0) ;
+        MovieRating x;
+
+        // break the loop
+        while (xIter.hasNext()){
+            x = xIter.next();
+
+            while (yIter.hasNext()){
+                y = yIter.next();
+                if (y.getMovieID() >= x.getMovieID()){
+                    break;
+                }
+            }
+
+            if (x.getMovieID() == y.getMovieID()) {
+                xLeft.add(x);
+                yLeft.add(y);
+
+            }
+        }
+
+        if (xLeft.size() < threshold) {
+            noNaNs++;
+            return Double.NaN;
+        }
+
+        correlation = computeCorrelation(xLeft, yLeft);
+
+        return correlation;
+    }
+
+    private double computeCorrelation(List<MovieRating> xLeft, List<MovieRating> yLeft){
+        return computeCorrelation(xLeft, yLeft, computeUserRatingAverage(xLeft), computeUserRatingAverage(yLeft));
+    }
+
+    private double computeCorrelation(List<MovieRating> xLeft, List<MovieRating> yLeft, double xMean, double yMean){
+        double correlation, yStd, xStd, upperSum;
+        Iterator<MovieRating>  xIter, yIter;
+
+        correlation =0.0;
+
+        // Computes S(X)
+        xStd =0;
+        yStd =0;
+        upperSum =0; // The Sum on the upper part
+        xIter = xLeft.iterator();
+        yIter = yLeft.iterator();
+
+        // xLeft and yLeft have the same number of elements
+        while (xIter.hasNext()){
+            MovieRating xRating = xIter.next();
+            MovieRating yRating = yIter.next();
+
+            double xR = xRating.getRating();
+            double yR = yRating.getRating();
+
+            xStd += Math.pow(xR-xMean,2);
+            yStd += Math.pow(yR-yMean,2);
+            upperSum += (xR-xMean)*(yR-yMean);
+        }
+
+//        System.out.println("Common samples :" + xLeft.size());
+//        System.out.println("Mean X :" + xMean);
+//        System.out.println("Mean Y :" + yMean);
+//        System.out.println("StD X :" + xStd);
+//        System.out.println("StD Y :" + yStd);
+//        System.out.println("Upper :" + upperSum);
+
+
+        correlation = upperSum / Math.sqrt(xStd * yStd);
+
+        return correlation;
+
+    }
+    /**
+     * Computers the average Movie Rating of a User
+     * @param ratings
+     * @return
+     */
+    private double computeUserRatingAverage(List <MovieRating> ratings){
+        double average = 0.0;
+        // FILL IN HERE
+        for (MovieRating xR : ratings) average += xR.getRating();
+        average /= ratings.size();
+
+        return average;
+    }
+
+    public void writeCorrelationMatrix(String filename) throws IOException{
+        File file = new File(filename);
+        CsvWriter csvWriter = new CsvWriter();
+
+        try (CsvAppender csvAppender = csvWriter.append(file, StandardCharsets.UTF_8)) {
+            // number of users
+            csvAppender.appendLine(Integer.toString(noUsers));
+
+            // parameters
+            csvAppender.appendLine("Threshold " + Integer.toString(threshold));
+
+            // correlation matrix
+            for (int i = 0; i < noUsers; i++) {
+                for (int j = 0; j < noUsers; j++) {
+                    csvAppender.appendField(Double.toString(get(i, j)));
+                }
+                csvAppender.appendLine();
+            }
+
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
+
+
+    }
+
+    /**
+     * Writes the correlation matrix into a file as comma-separated values.
+     *
+     * The resulting file contains the full nb_users x nb_users correlation
+     * matrix, such that the value on position (row_i, col_j) corresponds to
+     * the correlation between the user with internal id i and the user with
+     * internal id j. The values are separated by commas and rounded to four
+     * decimal digits. The actual matrix starts on line 3. The first line
+     * contains a single integer which defines the size of the matrix. The
+     * second line is reserved for additional parameter values which where
+     * used during the construction of the correlation matrix. You are free to
+     * use any format for this line. E.g.:
+     *  3
+     *  param1=value,param2=value
+     *  1.0000,-.3650,NaN
+     *  -.3650,1.0000,.0012
+     *  NaN,.0012,1.0000
+     *
+     * @param filename Path to the output file.
+     */
+    public void writeCorrelationMatrixOld(String filename) {
+        // FILL IN HERE //
+
+        // Initialize new file
+
+        // Initialises the Indices to 0
+        int[] userIndices = new int[noUsers - 1];
+
+        // We will be looping over the corrList twice, once for the rows and once for the columns
+        for (int i = 0 ; i < noUsers; i++){
+            double[] toWrite = new double[noUsers];
+
+            // Write correlations based on previous ids
+            for (int j = 0; j<i; j++){
+
+                // Write None when the current movieId is smaller than the next in the arraylist or
+                // When we have already found all the movieIds in the array list
+                if ( userIndices[j] > corrList[j].size() || corrList[j].get(userIndices[j]).getMovieId() > i){
+                    toWrite[j] = Double.NaN;
+                }
+                else {
+                    toWrite[j] = corrList[j].get(userIndices[j]).getCorrelation();
+                    userIndices[j]++;
+                }
+
+            }
+
+            //Write self-correlation, 1.0000 to File
+            toWrite[i] = 1.0;
+
+
+            //Write next correlations
+            Iterator<UserCorrelation>  tempIter = corrList[i].iterator();
+            int position = i + 1;
+            while (tempIter.hasNext()){
+                UserCorrelation temp = tempIter.next();
+
+                // Fills NaNs for the correlations we don't have
+                for (; position < temp.getMovieId(); position++){
+                    // Write Nan to file
+                    toWrite[position] = Double.NaN;
+                }
+
+                // Write temp.getCorrelation() to file;
+                toWrite[position] = temp.getCorrelation();
+
+            }
+
+            for (; position < noUsers; position ++){
+                // Write NaN to file
+                toWrite[position] = Double.NaN;
+            }
+
+            // Write the buffer Array to file
+
+        }
+    }
+
+
+    /**
+     * Reads the correlation matrix from a file.
+     *
+     * @param filename Path to the input file.
+     * @see writeCorrelationMatrix
+     */
+    public void readCorrelationMatrix(String filename) {
+        // FILL IN HERE //
+    }
+
+
+    public static void main(String[] args) {
+        String trainingFile = "";
+        String outputFile = "";
+
+        int i = 0;
+        while (i < args.length && args[i].startsWith("-")) {
+            String arg = args[i];
+            if(arg.equals("-trainingFile")) {
+                trainingFile = args[i+1];
+            } else if(arg.equals("-outputFile")) {
+                outputFile = args[i+1];
+            } 
+            // ADD ADDITIONAL PARAMETERS //
+            i += 2;
+        }
+
+        long start,stop, movieTime, pearsonTime, writeTime;
+
+        start = System.currentTimeMillis();
+
+        MovieHandler ratings = new MovieHandler(trainingFile);
+
+        stop = System.currentTimeMillis();
+        movieTime = stop-start;
+
+        System.out.println("Movie Handling: " + movieTime/1000.0);
+
+        start = System.currentTimeMillis();
+        System.out.println("Computing Movies Pearson Correlations...");
+        PearsonsCorrelation matrix = new PearsonsCorrelation(ratings);
+
+        stop = System.currentTimeMillis();
+        pearsonTime = stop-start;
+
+        System.out.println("done, took " + pearsonTime/1000.0);
+
+        System.out.println("Saving Correlations to the disk...");
+        start = System.currentTimeMillis();
+
+        try {
+            matrix.writeCorrelationMatrix(outputFile);
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
+
+        stop = System.currentTimeMillis();
+
+        writeTime = stop-start;
+
+        System.out.println("done, took " + writeTime/1000.0);
+    }
+
+}
+

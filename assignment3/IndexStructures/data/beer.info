@@ -1,0 +1,35 @@
+COUNT: 326
+
+PRICE	min: 0.79	max: 49.99
+
+STYLE
+Blond Beers	80
+Brown Beers	36
+Gueuze Beers	26
+Abbey beers	25
+Lambic - Kriek	21
+Fruit Beers	17
+Amber Beers	15
+Lambic - Other	13
+Pils	11
+Other Beers	11
+Flemish Red	11
+Christmas Beer	9
+White Beers	8
+Stout	8
+Seasonal	6
+Organic beer	6
+IPA	6
+Low-Alcohol Beers	4
+Champagne Beer	4
+Trappist	3
+Scotch	2
+Saison beer	2
+Beer-Itz	2
+
+VOLUME
+33	157
+75	94
+25	40
+37.5	33
+50	2

@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a1573d6b-73f5-4b12-8449-26514acfa304" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/assignment3$PearsonsCorrelation.ic" NAME="PearsonsCorrelation Coverage Results" MODIFIED="1523033973446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="assignment3" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MovieRunner.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MovieRecommendation/src/MovieRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-219">
+              <caret line="226" selection-start-line="226" selection-end-line="226" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PearsonsCorrelation.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MovieRecommendation/src/PearsonsCorrelation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="325" column="48" selection-start-line="325" selection-start-column="48" selection-end-line="325" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#13404#13405#0" expanded="true" />
+                <element signature="e#13435#13436#0" expanded="true" />
+                <element signature="e#13508#13509#0" expanded="true" />
+                <element signature="e#13547#13548#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MovieRunnerNN.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MovieRecommendation/src/MovieRunnerNN.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Experiments.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IndexStructures/src/Experiments.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-945">
+              <caret line="223" column="30" selection-start-line="223" selection-start-column="30" selection-end-line="223" selection-end-column="30" />
+              <folding>
+                <element signature="e#2592#2610#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BitSlice.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IndexStructures/src/BitSlice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MovieHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MovieRecommendation/src/MovieHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1806">
+              <caret line="138" selection-start-line="138" selection-end-line="138" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;method#readData#0;class#MovieHandler#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserCorrelation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MovieRecommendation/src/UserCorrelation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Neighbor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MovieRecommendation/src/Neighbor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MovieRating.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MovieRecommendation/src/MovieRating.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>l</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/IndexStructures/src/DataTable.java" />
+        <option value="$PROJECT_DIR$/IndexStructures/src/RecordSelector.java" />
+        <option value="$PROJECT_DIR$/IndexStructures/src/NumberOnes.java" />
+        <option value="$PROJECT_DIR$/IndexStructures/src/BitSlice.java" />
+        <option value="$PROJECT_DIR$/IndexStructures/src/BitMap.java" />
+        <option value="$PROJECT_DIR$/MovieRecommendation/src/SimilarPair.java" />
+        <option value="$PROJECT_DIR$/MovieRecommendation/src/CorrelationPair.java" />
+        <option value="$PROJECT_DIR$/MovieRecommendation/src/CsvAppender.java" />
+        <option value="$PROJECT_DIR$/MovieRecommendation/src/FastBufferedWriter.java" />
+        <option value="$PROJECT_DIR$/MovieRecommendation/src/CsvWriter.java" />
+        <option value="$PROJECT_DIR$/MovieRecommendation/src/UserCorrelation.java" />
+        <option value="$PROJECT_DIR$/MovieRecommendation/src/MovieRating.java" />
+        <option value="$PROJECT_DIR$/MovieRecommendation/src/MovieHandler.java" />
+        <option value="$PROJECT_DIR$/MovieRecommendation/src/MovieRunnerNN.java" />
+        <option value="$PROJECT_DIR$/MovieRecommendation/src/MovieRunner.java" />
+        <option value="$PROJECT_DIR$/IndexStructures/src/Experiments.java" />
+        <option value="$PROJECT_DIR$/IndexStructures/src/ReaderWriter.java" />
+        <option value="$PROJECT_DIR$/MovieRecommendation/src/ReaderWriter.java" />
+        <option value="$PROJECT_DIR$/MovieRecommendation/src/PearsonsCorrelation.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="14" />
+    <option name="width" value="1920" />
+    <option name="height" value="1066" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="assignment3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment3" type="462c0819:PsiDirectoryNode" />
+              <item name="IndexStructures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment3" type="462c0819:PsiDirectoryNode" />
+              <item name="IndexStructures" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment3" type="462c0819:PsiDirectoryNode" />
+              <item name="MovieRecommendation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment3" type="462c0819:PsiDirectoryNode" />
+              <item name="MovieRecommendation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/IndexStructures" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.PearsonsCorrelation">
+    <configuration name="Experiments" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Experiments" />
+      <module name="assignment3" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/IndexStructures/data/beer.data 326 ;" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="MovieRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MovieRunner" />
+      <module name="assignment3" />
+      <option name="PROGRAM_PARAMETERS" value="-alpha 2 -trainingFile MovieRecommendation/data/ra.train -matrixFile MovieRecommendation/data/ra.matrix -testFile MovieRecommendation/data/ra.test" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="NumberOnes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NumberOnes" />
+      <module name="assignment3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="PearsonsCorrelation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8 (1)" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="PearsonsCorrelation" />
+      <module name="assignment3" />
+      <option name="PROGRAM_PARAMETERS" value="-trainingFile $PROJECT_DIR$/MovieRecommendation/data/ra.train -outputFile $PROJECT_DIR$/MovieRecommendation/data/ra.matrix -leastcommon 4 -threshold 0.5" />
+      <option name="VM_PARAMETERS" value="-Xmx2g -Xms2g" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Debug with VisualVM">
+        <option name="visualVMId" value="38757794140982" />
+      </RunnerSettings>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <list>
+      <item itemvalue="Application.NumberOnes" />
+      <item itemvalue="Application.Experiments" />
+      <item itemvalue="Application.PearsonsCorrelation" />
+      <item itemvalue="Application.MovieRunner" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PearsonsCorrelation" />
+        <item itemvalue="Application.MovieRunner" />
+        <item itemvalue="Application.Experiments" />
+        <item itemvalue="Application.NumberOnes" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a1573d6b-73f5-4b12-8449-26514acfa304" name="Default" comment="" />
+      <created>1522337438747</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1522337438747</updated>
+      <workItem from="1522337443106" duration="2142000" />
+      <workItem from="1522339731647" duration="475000" />
+      <workItem from="1522340234160" duration="841000" />
+      <workItem from="1522573843977" duration="20970000" />
+      <workItem from="1522613306857" duration="9085000" />
+      <workItem from="1522676125819" duration="5962000" />
+      <workItem from="1522758553675" duration="14060000" />
+      <workItem from="1522843754290" duration="11800000" />
+      <workItem from="1522927105492" duration="13881000" />
+      <workItem from="1522944401896" duration="5311000" />
+      <workItem from="1523019392926" duration="14014000" />
+      <workItem from="1523033667655" duration="43000" />
+      <workItem from="1523033750531" duration="1606000" />
+      <workItem from="1523035972907" duration="9706000" />
+      <workItem from="1523102550586" duration="24429000" />
+      <workItem from="1523191210379" duration="7986000" />
+      <workItem from="1523203649366" duration="12059000" />
+      <workItem from="1523227624590" duration="1709000" />
+      <workItem from="1523266384430" duration="8384000" />
+      <workItem from="1523366739912" duration="12214000" />
+      <workItem from="1523387169767" duration="4601000" />
+      <workItem from="1523438733199" duration="24785000" />
+      <workItem from="1523476151689" duration="17234000" />
+      <workItem from="1523534073196" duration="22467000" />
+      <workItem from="1523575504997" duration="2033000" />
+      <workItem from="1523624718988" duration="726000" />
+      <workItem from="1523701802551" duration="257000" />
+      <workItem from="1523708330482" duration="2353000" />
+      <workItem from="1523816702074" duration="29423000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="280556000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="14" width="1920" height="1066" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32608697" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005225" side_tool="true" weight="0.32919255" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3498965" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32919255" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.47929937" visible="true" weight="0.1384535" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="8" sideWeight="0.49947754" weight="0.32919255" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" sideWeight="0.52070063" side_tool="true" visible="true" weight="0.1384535" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39958593" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="8" weight="0.32919255" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.32967606" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32919255" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="20" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MovieRecommendation/src/Neighbor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovieRecommendation/src/MovieRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovieRecommendation/src/PearsonsCorrelation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3600">
+          <caret line="240" column="15" selection-start-line="240" selection-start-column="15" selection-end-line="240" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#13404#13405#0" expanded="true" />
+            <element signature="e#13435#13436#0" expanded="true" />
+            <element signature="e#13508#13509#0" expanded="true" />
+            <element signature="e#13547#13548#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovieRecommendation/src/MovieRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/io/PrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10995">
+          <caret line="733" selection-start-line="733" selection-end-line="733" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/BitSlice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="34" column="72" selection-start-line="34" selection-start-column="72" selection-end-line="34" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/Experiments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2715">
+          <caret line="187" selection-start-line="187" selection-end-line="187" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/NumberOnes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/ValueSelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/RecordSelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/DataTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/BitMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1950">
+          <caret line="139" column="57" selection-start-line="139" selection-start-column="57" selection-end-line="139" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/BitSlice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/BitMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1515">
+          <caret line="106" column="46" selection-start-line="106" selection-start-column="46" selection-end-line="106" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/NumberOnes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="120" selection-start-line="1" selection-start-column="120" selection-end-line="1" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/ValueSelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/RecordSelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/data/beer.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/BitSlice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="86" column="19" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/DataTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/Experiments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1485">
+          <caret line="99" column="31" lean-forward="true" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/BitMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1695">
+          <caret line="118" column="25" selection-start-line="118" selection-start-column="25" selection-end-line="118" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/Experiments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="58" column="6" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/BitSlice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/DataTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/NumberOnes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/BitMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/DataTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/DataTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/DataTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/data/beer.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/io/PrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10200">
+          <caret line="733" selection-start-line="733" selection-end-line="733" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/NumberOnes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/ValueSelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/RecordSelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/DataTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/BitMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="56" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovieRecommendation/src/FastBufferedWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovieRecommendation/src/CsvAppender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="85" column="29" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovieRecommendation/src/CsvWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1799">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovieRecommendation/src/MovieRating.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/BitSlice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovieRecommendation/src/Neighbor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovieRecommendation/src/MovieRunnerNN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexStructures/src/Experiments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-945">
+          <caret line="223" column="30" selection-start-line="223" selection-start-column="30" selection-end-line="223" selection-end-column="30" />
+          <folding>
+            <element signature="e#2592#2610#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovieRecommendation/src/UserCorrelation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovieRecommendation/src/MovieHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1806">
+          <caret line="138" selection-start-line="138" selection-end-line="138" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#readData#0;class#MovieHandler#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovieRecommendation/src/ReaderWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovieRecommendation/src/CorrelationPair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovieRecommendation/src/MovieRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-219">
+          <caret line="226" selection-start-line="226" selection-end-line="226" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovieRecommendation/src/PearsonsCorrelation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="325" column="48" selection-start-line="325" selection-start-column="48" selection-end-line="325" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#13404#13405#0" expanded="true" />
+            <element signature="e#13435#13436#0" expanded="true" />
+            <element signature="e#13508#13509#0" expanded="true" />
+            <element signature="e#13547#13548#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>assignment3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
