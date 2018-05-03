@@ -17,7 +17,7 @@ Java Implementation of:
     
 ---------------
 
-The initial assignment's code we had to work upon was provided by the Teaching Assistants:
+The initial assignments' code we had to work upon was provided by the Teaching Assistants:
 - Jessa Bekker
 - Toon Van Craenendonck
 - Pieter Robberechts
